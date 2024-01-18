@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Deqoder: QR and Barcode</string>
+
+    <string name="ad_app_id">ca-app-pub-8794862275994874~6433588979</string>
+    <string name="ad_unit_01">ca-app-pub-8794862275994874/7060274932</string>
+
+    <string name="scan_btn_text">Scan a code</string>
+    <string name="scan_description">Scan any Barcode or QR code using your phone\'s camera</string>
+    <string name="gen_btn_text">Generate from text</string>
+    <string name="gen_description">Generate a Barcode or QR code and save it as an image in your phone</string>
+    <string name="gen_act_description">Input any text and generate into Barcode or QR code</string>
+    <string name="gen_et_hint">Enter text here...</string>
+    <string name="gen_bc_btn_txt">Generate Barcode</string>
+    <string name="gen_qr_btn_txt">Generate\nQR code</string>
+    <string name="save_img_btn">Save to phone</string>
+    <string name="dia_result_header_text">Obtained text from code</string>
+    <string name="copy_to_cb_btn">Copy to clipboard</string>
+    <string name="close_result">Close</string>
+    <string name="goto_result">Open Link</string>
+    <string name="switch_text">Show text under the code</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">Scan code shortcut</string>
+    <string name="widget_label">Scan Code</string>
+    <!--<string name=""></string>-->
+</resources>

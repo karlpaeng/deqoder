@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+
+    tools:context=".Home">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl01"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/shape_white_round_big"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cl02">
+
+        <View
+            android:id="@+id/divider01"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/transpa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:padding="15dp"
+            android:background="@drawable/ripple_darkgray_round"
+            android:clickable="true"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/divider01">
+            <View
+                android:id="@+id/divider02"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/transpa"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/scan_btn_text"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:fontFamily="@font/rubik_bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/divider02"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/divider02"
+                android:src="@drawable/png_scan_ic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/scan_description"
+            android:fontFamily="@font/rubik_bold_italic"
+            app:layout_constraintBottom_toTopOf="@id/clScanBtn"
+            android:textColor="@color/blueish"
+            android:textSize="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/shape_white_round_big"
+        app:layout_constraintTop_toBottomOf="@id/cl01"
+        app:layout_constraintBottom_toTopOf="@id/adViewHome">
+
+        <View
+            android:id="@+id/divider03"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/transpa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clGenBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:padding="15dp"
+            android:background="@drawable/ripple_darkgray_round"
+            android:clickable="true"
+            android:elevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/divider03">
+            <View
+                android:id="@+id/divider04"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/transpa"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/gen_btn_text"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:fontFamily="@font/rubik_bold"
+                app:layout_constraintLeft_toLeftOf="@id/divider04"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@id/divider04"
+                android:src="@drawable/png_gen_ic" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/gen_description"
+            android:fontFamily="@font/rubik_bold_italic"
+            app:layout_constraintBottom_toTopOf="@id/clGenBtn"
+            android:textColor="@color/blueish"
+            android:textSize="24dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:adSize="BANNER"
+        app:adUnitId="@string/ad_unit_01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
